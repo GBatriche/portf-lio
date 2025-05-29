@@ -1,0 +1,91 @@
+/* Define a fonte padrão para o corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333; /* Cor de texto padrão */
+}
+
+/* Estilo para rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para a barra de navegação fixa */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para os cards de projeto */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os ícones de habilidade */
+.skill-icon {
+    font-size: 2.5rem; /* Tamanho do ícone */
+    color: #ED5B2D; /* Cor primária */
+    margin-bottom: 0.5rem;
+}
+
+/* Animação para o hero section */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Estilo para o botão de voltar ao topo */
+#back-to-top {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Posição fixa */
+    bottom: 20px; /* 20px do fundo */
+    right: 20px; /* 20px da direita */
+    z-index: 99; /* Alto z-index para ficar acima de outros elementos */
+    border: none; /* Sem borda */
+    outline: none; /* Sem contorno */
+    background-color: #ED5B2D; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro */
+    padding: 15px; /* Preenchimento */
+    border-radius: 50%; /* Borda arredondada (círculo) */
+    font-size: 18px; /* Tamanho da fonte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#back-to-top:hover {
+    background-color: #ED7D2D; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px);
+}
