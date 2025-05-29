@@ -40,7 +40,6 @@
                 <a href="#experience" class="text-white hover:text-light-cream transition duration-300">Experiência</a>
                 <a href="#projects" class="text-white hover:text-light-cream transition duration-300">Projetos</a>
                 <a href="#skills" class="text-white hover:text-light-cream transition duration-300">Habilidades</a>
-                <a href="#education" class="text-white hover:text-light-cream transition duration-300">Formação</a>
                 <a href="#contact" class="text-white hover:text-light-cream transition duration-300">Contato</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -52,7 +51,6 @@
             <a href="#experience" class="block py-2 px-4 text-white hover:bg-medium-orange transition duration-300 rounded-md">Experiência</a>
             <a href="#projects" class="block py-2 px-4 text-white hover:bg-medium-orange transition duration-300 rounded-md">Projetos</a>
             <a href="#skills" class="block py-2 px-4 text-white hover:bg-medium-orange transition duration-300 rounded-md">Habilidades</a>
-            <a href="#education" class="block py-2 px-4 text-white hover:bg-medium-orange transition duration-300 rounded-md">Formação</a>
             <a href="#contact" class="block py-2 px-4 text-white hover:bg-medium-orange transition duration-300 rounded-md">Contato</a>
         </div>
     </nav>
@@ -123,8 +121,11 @@
         </section>
 
         <section id="projects" class="py-16 md:py-24 bg-light-cream px-4">
-            <div class="container mx-auto max-w-4xl">
+            <div class="container mx-auto">
                 <h2 class="text-4xl font-bold text-primary-orange mb-8 text-center">Projetos Relevantes</h2>
+                <p class="text-center text-gray-700 text-lg mb-8 flex items-center justify-center">
+                    <i class="fas fa-hand-point-down mr-2 text-primary-orange"></i> Clique nos cards abaixo para ver os detalhes de cada projeto no GitHub!
+                </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <a href="https://github.com/seu-usuario/nome-do-projeto-1" target="_blank" class="project-card bg-white p-10 rounded-lg shadow-lg hover:shadow-xl">
                         <h3 class="text-2xl font-semibold text-medium-orange mb-2">Sistema de Controle Patrimonial para Órgão Público</h3>
@@ -171,70 +172,151 @@
         </section>
 
         <section id="skills" class="py-16 md:py-24 bg-white px-4">
-            <div class="container mx-auto max-w-4xl">
+            <div class="container mx-auto">
                 <h2 class="text-4xl font-bold text-primary-orange mb-8 text-center">Habilidades</h2>
                 <div class="bg-light-cream p-8 rounded-lg shadow-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-code mr-2 skill-icon"></i>Linguagens</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>Java (POO)</li>
-                                <li>SQL</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg- p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-code mr-3 text-2xl text-primary-orange"></i>Linguagens
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Java (POO)</span> <span class="font-semibold text-primary-orange text-sm">90%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>SQL</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>HTML</span> <span class="font-semibold text-primary-orange text-sm">75%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>CSS</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-cubes mr-2 skill-icon"></i>Frameworks & Bibliotecas</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>Spring Boot</li>
-                                <li>Spring MVC</li>
-                                <li>Spring Data JPA</li>
-                                <li>Spring Security</li>
-                                <li>Hibernate</li>
-                                <li>JUnit</li>
-                                <li>Mockito</li>
-                                <li>REST Assured</li>
+
+                        <div class="bg-light-cream p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-cubes mr-3 text-2xl text-primary-orange"></i>Frameworks & Bibliotecas
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Spring Boot</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Spring MVC</span> <span class="font-semibold text-primary-orange text-sm">80%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Spring Data JPA</span> <span class="font-semibold text-primary-orange text-sm">80%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Spring Security</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Hibernate</span> <span class="font-semibold text-primary-orange text-sm">75%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>JUnit</span> <span class="font-semibold text-primary-orange text-sm">90%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Mockito</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>REST Assured</span> <span class="font-semibold text-primary-orange text-sm">75%</span>
+                                </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-plug mr-2 skill-icon"></i>APIs e Integrações</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>RESTful APIs</li>
-                                <li>Swagger/OpenAPI</li>
-                                <li>JWT</li>
-                                <li>Web Services</li>
-                                <li>Postman</li>
+
+                        <div class="bg-light-cream p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-plug mr-3 text-2xl text-primary-orange"></i>APIs e Integrações
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>RESTful APIs</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Swagger/OpenAPI</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>JWT</span> <span class="font-semibold text-primary-orange text-sm">75%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Web Services</span> <span class="font-semibold text-primary-orange text-sm">65%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Postman</span> <span class="font-semibold text-primary-orange text-sm">90%</span>
+                                </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-database mr-2 skill-icon"></i>Banco de Dados</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>H2</li>
-                                <li>MongoDB</li>
+
+                        <div class="bg-light-cream p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-database mr-3 text-2xl text-primary-orange"></i>Banco de Dados
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>MySQL</span> <span class="font-semibold text-primary-orange text-sm">80%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>PostgreSQL</span> <span class="font-semibold text-primary-orange text-sm">75%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>H2</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>MongoDB</span> <span class="font-semibold text-primary-orange text-sm">60%</span>
+                                </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-tools mr-2 skill-icon"></i>DevOps & Ferramentas</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>Docker</li>
-                                <li>Git</li>
-                                <li>Maven</li>
-                                <li>Gradle</li>
-                                <li>Flyway</li>
-                                <li>CI/CD (GitHub Actions)</li>
-                                <li>IntelliJ IDEA</li>
-                                <li>VS Code</li>
-                                <li>Lombok</li>
+
+                        <div class="bg-light-cream p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-tools mr-3 text-2xl text-primary-orange"></i>DevOps & Ferramentas
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Docker</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Git</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Maven</span> <span class="font-semibold text-primary-orange text-sm">80%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Gradle</span> <span class="font-semibold text-primary-orange text-sm">70%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Flyway</span> <span class="font-semibold text-primary-orange text-sm">65%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>CI/CD (GitHub Actions)</span> <span class="font-semibold text-primary-orange text-sm">60%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>IntelliJ IDEA</span> <span class="font-semibold text-primary-orange text-sm">90%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>VS Code</span> <span class="font-semibold text-primary-orange text-sm">85%</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Lombok</span> <span class="font-semibold text-primary-orange text-sm">90%</span>
+                                </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center"><i class="fas fa-language mr-2 skill-icon"></i>Idiomas</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>Inglês - Avançado (C1)</li>
-                                <li>Francês - Básico</li>
+
+                        <div class="bg-light-cream p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <h3 class="text-xl font-semibold text-medium-orange mb-4 flex items-center">
+                                <i class="fas fa-language mr-3 text-2xl text-primary-orange"></i>Idiomas
+                            </h3>
+                            <ul class="list-none space-y-2">
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Inglês</span> <span class="font-semibold text-primary-orange text-sm">Avançado (C1)</span>
+                                </li>
+                                <li class="bg-white p-2 rounded-md shadow-sm text-gray-700 flex justify-between items-center">
+                                    <span>Francês</span> <span class="font-semibold text-primary-orange text-sm">Básico</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -242,33 +324,10 @@
             </div>
         </section>
 
-        <section id="education" class="py-16 md:py-24 bg-light-cream px-4">
-            <div class="container mx-auto max-w-4xl">
-                <h2 class="text-4xl font-bold text-primary-orange mb-8 text-center">Formação e Cursos</h2>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-semibold text-medium-orange mb-2">Sistemas de Informação - Bacharelado</h3>
-                        <p class="text-xl font-medium text-gray-800 mb-2">Unimeta</p>
-                        <p class="text-gray-600">Fevereiro/2021 - Junho/2026</p>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-medium-orange mb-4">Cursos Complementares</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Inteligência Artificial - EBAC - 2025</li>
-                            <li>Comunicação assertiva: reduzindo conflitos e frustrações - Alura - 2023</li>
-                            <li>Scrum - Alura - 2023</li>
-                            <li>Java com orientação a objetos - Alura - 2023</li>
-                            <li>Java Completo - Udemy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-16 md:py-24 bg-white px-4">
+        <section id="contact" class="py-16 md:py-24 bg-light-cream px-4">
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="text-4xl font-bold text-primary-orange mb-8">Contato</h2>
-                <div class="bg-light-cream p-8 rounded-lg shadow-lg inline-block">
+                <div class="bg-white p-8 rounded-lg shadow-lg inline-block">
                     <p class="text-xl text-gray-700 mb-4">Ficarei feliz em conectar e discutir oportunidades!</p>
                     <div class="flex flex-col items-center space-y-4">
                         <a href="mailto:batricheg@gmail.com" class="text-primary-orange hover:text-medium-orange text-lg flex items-center">
